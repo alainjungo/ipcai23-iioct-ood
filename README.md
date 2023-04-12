@@ -26,4 +26,4 @@ This is the repository to the **IPCAI 2023** contribution [Unsupervised out-of-d
 ## Information
 - **Results**: The results are shared in the `out` folder
 - **Data**: The data is privat and cannot be shared
-- **Models**: The models can be downloaded as assets in the release
+- **Models**: The [models](https://github.com/alainjungo/ipcai23-iioct-ood/releases/latest) can be downloaded as release asset
