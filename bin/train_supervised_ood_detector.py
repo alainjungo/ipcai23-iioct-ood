@@ -6,6 +6,7 @@ from torch import optim
 import torch.nn.functional as F
 import torch.utils.tensorboard as tensorboard
 from torch.utils import data
+import torchvision.models as mdls
 import numpy as np
 import sklearn.metrics as m
 
@@ -71,7 +72,7 @@ class MyContext(loop.Context):
         return optim.Adam(self.model.parameters(), lr=self.lr)
 
     def _init_model(self):
-        model = mdl.get_adapted_effnet(out_classes=1, pretrained=True)
+        model = mdl.get_adapted_effnet(out_classes=1, weights=mdls.EfficientNet_B0_Weights.IMAGENET1K_V1)
         model.to(self.device)
         return model
 
